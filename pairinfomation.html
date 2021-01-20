@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./pairinfomation.css">
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="./normalize1.css">
+    <title>お問い合わせ</title>
+  </head>
+  <body>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" >
+  </script>
+  <script >
+    $('#fadeout').on('click',function(){
+      $('.main').fadeout("");
+    });
+  </script>
+  <script>
+  $(function(){
+$('#fadeout').on('click', function(){
+  if($('#your_name').val() === ''){
+    alert('名前を入力してください！');
+    $('#your_name').focus();
+    return false;
+  }
+  alert('送信完了！');
+});
+});
+  </script>
+
+    <div class="main clearfix">
+      <img src="./tegami2.jpg" alt="">
+    <div class="form">
+      <h1>お問い合わせ</h1>
+      <p>名前</p>
+        <input id="your_name" class="text" type="text" name="name" value="">
+      <p>連絡先</p>
+        <input class="text" type="text" name="mailadress" value="">
+      <p>お問い合わせ内容</p>
+        <textarea class="text" name="infomation" rows="8" cols="45"></textarea>
+        <div class="submit">
+         <input id="fadeout" type="submit" name="submit" value="送信">
+       </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>

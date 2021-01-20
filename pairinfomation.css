@@ -1,0 +1,32 @@
+body{
+  background-image: ();
+}
+img{
+  width: 1000px;
+  height: 1000px;
+}
+h1{
+  padding-bottom: 70px;
+}
+.main{
+ text-align: center;
+ position: relative;
+}
+.clearfix:after{
+  content;;
+  display: block;
+  clear: both;
+}
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    width: 30%;
+}
+.text{
+  width: 400px;
+}
+.submit{
+  margin-top: 30px;
+}
